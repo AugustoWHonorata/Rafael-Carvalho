@@ -1,22 +1,28 @@
 import styled from "styled-components";
+import FotoQuemSouEu from "./FotoQuemSouEu";
+import DescricaoQuemSouEu from "./DescricaoQuemSouEu";
+import DivDesktop from "../ElementosPadrao/DivDesktop";
 
-const QuemSouEuTitulo = styled.h2`
-  font-size: 10vw;
+const Section = styled.section`
+  padding: 0;
+`
+const QuemSouEuTitulo = styled.h4`
   color: #000;
-  text-shadow: 0px 0px 5px red;
-  -webkit-text-stroke: 2px white;
-  letter-spacing: 8px;
+  text-align: center;
 `;
 
 
 
-
 function QuemSouEu() {
-    return(
-        <QuemSouEuTitulo/>
-
-        
-    )
+  return (
+    <Section id="quemSouEu">
+      <QuemSouEuTitulo>Quem Sou Eu</QuemSouEuTitulo>
+      <DivDesktop>
+        <FotoQuemSouEu/>
+        <DescricaoQuemSouEu/>
+      </DivDesktop>
+    </Section>
+  )
 }
 
 export default QuemSouEu

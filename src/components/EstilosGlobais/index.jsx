@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import GandhiSansBold from './fontes/GandhiSans-Bold.otf'
 import GandhiSansRegular from './fontes/GandhiSans-Regular.otf'
+import AngelWish from './fontes/Angel-wish.ttf'
 
 const EstilosGlobais = createGlobalStyle`
  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -14,26 +15,27 @@ const EstilosGlobais = createGlobalStyle`
   font-family: 'GandhiSans-Regular';
   src: local('Gandhi Sans Regular'), local('GandhiSans-Regular'), url(${GandhiSansRegular});
  }
-
+ @font-face {
+  font-family: 'Angel-wish';
+  src: url(${AngelWish});
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: GandhiSansRegular;
-  
 }
 
 
 body {
-  background-image: url("/imagens/ImagemEscura.png");
-  background-repeat: no-repeat;
+  background-image: url("/imagens/Fundos/Fundo(2).jpg");
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
+  color: #000;
   margin: 0;
-  width: 100%;
   overflow-x: hidden;
-  padding: 0;
+  text-align: center;
+  width: 100vw;
 }   
 
 
@@ -47,11 +49,27 @@ ul{
 }
 
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Angel-wish';
+  letter-spacing: 8px;
+  font-size: 4em;
+  overflow-wrap: break-word;
+  margin: 2em 0;
+  @media (min-width: 1024px) {
+        font-size: 7em;
+    }
 }
 
+p{
+  letter-spacing: 5px;
+  font-style: italic;
+}
+
+
+section{
+  padding-top: 6em;
+}
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -89,9 +107,6 @@ samp {
   font-size: 1em; /* 2 */
 }
 
-/**
- * Add the correct font size in all browsers.
- */
 
 small {
   font-size: 80%;

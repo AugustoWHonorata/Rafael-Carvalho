@@ -1,18 +1,22 @@
-[
-    {
-      "imagem": "/imagens/Valquiria.jpg",
-      "descricao": "Valquiria"
-    },
-    {
-      "imagem": "/imagens/coracaoDeFogo.jpg",
-      "descricao": "Coração de Fogo"
-    },
-    {
-      "imagem": "/imagens/Farol.jpg",
-      "descricao": "Farol"
-    },
-    {
-      "imagem": "/imagens/Dragao_Mao.jpg",
-      "descricao": "Dragão Chinês"
-    }
-  ]
+  [
+      {
+        "imagem": "/imagens/Valquiria.jpg",
+        "titulo": "Valquiria",
+        "linkInstagram": "https://www.instagram.com/rafaelcarvalhoink"
+      },
+      {
+        "imagem": "/imagens/coracaoDeFogo.jpg",
+        "titulo": "Coração de Fogo",
+        "linkInstagram": "https://www.instagram.com/rafaelcarvalhoink"
+      },
+      {
+        "imagem": "/imagens/Farol.jpg",
+        "titulo": "Farol",
+        "linkInstagram": "https://www.instagram.com/rafaelcarvalhoink"
+      },
+      {
+        "imagem": "/imagens/Dragao_Mao.jpg",
+        "titulo": "Dragão Chinês",
+        "linkInstagram": "https://www.instagram.com/rafaelcarvalhoink"
+      }
+    ]

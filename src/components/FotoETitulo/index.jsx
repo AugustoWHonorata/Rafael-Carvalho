@@ -1,11 +1,19 @@
 import styled from "styled-components";
+import IndicadorDeRolagem from "./IndicadorDeRolagem";
+import { useEffect } from "react";
+
+
 
 const ConteinerPrincipal = styled.section`
-    height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
+    padding-top: 2em;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
 `
 
 const FotoRafael = styled.img`
@@ -14,25 +22,44 @@ const FotoRafael = styled.img`
     height: 90vw; 
     width: 90vw; 
     object-fit: cover; 
-    box-shadow: 8px 4px 10px 0px rgba(0, 0, 0, 0.866),19px 10px 21px -3px rgba(0,0,0,0.6),19px 14px 7px -3px rgba(0,0,0,0.3);    
+       filter: brightness(100%) saturate(100%) drop-shadow(0 0 5px #220000cb) drop-shadow(0 0 10px #220000cb) drop-shadow(0 0 15px #220000cb);
+    @media (min-width: 768px) {
+        height: 40vw;
+        width: 40vw;
+    }
+    @media (min-width: 1024px) {
+        height: 50vh;
+        width: 50vh;
+    }
     `
 
 const TituloNome = styled.h1`
-    font-size: 10vw; 
+    font-size: 3em;
     text-align: center;
     padding: 0.5rem; 
+    margin: 4rem 0 1.5rem 0; 
     color: #000;
-    text-shadow: 0px 0px 5px red;
-    -webkit-text-stroke: 2px white;
-    letter-spacing: 8px;
-
+    @media (min-width: 1024px) {
+        font-size: 7em;
+    }
 `
 
+
+
 function FotoETitulo() {
+    const handleScroll = () => {
+        const SecaoIndicadorRolagem = document.querySelector('section[id="portfolio"]');
+        if (SecaoIndicadorRolagem) {
+          SecaoIndicadorRolagem.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+    
+
     return (
         <ConteinerPrincipal>
-            <FotoRafael src="/imagens/FotoRafael.jpg" alt="Foto Rafael"/>
-            <TituloNome>RAFAEL CARVALHO INK</TituloNome>
+            <FotoRafael src="/imagens/FotoRafael.jpg" alt="Foto Rafael" />
+            <TituloNome>Rafael Carvalho Ink</TituloNome>
+            <IndicadorDeRolagem handleScroll={handleScroll}/>
         </ConteinerPrincipal>
     )
 }
