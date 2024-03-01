@@ -39,7 +39,7 @@ function PorqueOldSchool() {
                 </DivPadrao>
                 <DivVejaExemplos>
                     <ParagrafoVejaExemplos>Alguns exemplos</ParagrafoVejaExemplos>
-                    <ImgPq src="src/assets/DesenhosJuntos.png" />
+                    <ImgPq src="/assets/DesenhosJuntos.png" />
                 </DivVejaExemplos>
             </DivDesktop>
         </section>
