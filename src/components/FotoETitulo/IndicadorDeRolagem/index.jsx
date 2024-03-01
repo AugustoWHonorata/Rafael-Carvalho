@@ -37,7 +37,7 @@ const Indicador = styled.div`
     }
 `;
 
-const IndicadorDeRolagem = ({ onClick, handleScroll }) => {
+const IndicadorDeRolagem = ({ handleScroll }) => {
     const handleClick = () => {
         if (handleScroll) {
           handleScroll();

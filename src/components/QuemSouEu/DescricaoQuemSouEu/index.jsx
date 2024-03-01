@@ -1,23 +1,14 @@
 import styled from "styled-components"
 import DivPadrao from "../../ElementosPadrao/DivPadrao"
+import ParagrafoPadrao from "../../ElementosPadrao/ParagrafoPadrao"
 
-const Paragrafo = styled.p`
-  font-size: 6vw;
-  @media (min-width: 768px) {
-        font-size: 1em;
-    }
-  @media (min-width: 1024px) {
-        font-size: 2em;
-    }
-
-`
 
 
 
 function DescricaoQuemSouEu() {
     return (
         <DivPadrao>
-            <Paragrafo>Aqui é o Rafa, sou tatuador e hoje vou contar um pouco da minha história!
+            <ParagrafoPadrao>Aqui é o Rafa, sou tatuador e hoje vou contar um pouco da minha história!
                 Desde meus 12 anos já tinha indícios que eu iria trabalhar com arte, gostava muito de desenhar!
                 Mas a vida cria rumos diferentes, porém todos me fizeram chegar até aqui e no tempo certo!<br />
                 Costumava a dizer que a vida adulta é onde os sonhos morrem! Mas…
@@ -26,7 +17,7 @@ function DescricaoQuemSouEu() {
                 E eu ganhei! O que isso muda para vocês? Nada! Pra mim? A certeza que estou no caminho certo e que posso evoluir ainda mais!
                 Parar não é uma opção!
                 Acredite nos seus sonhos!
-            </Paragrafo>
+            </ParagrafoPadrao>
         </DivPadrao>)
 }
 

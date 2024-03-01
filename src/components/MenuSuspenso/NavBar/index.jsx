@@ -12,7 +12,7 @@ const NavbarContainer = styled.div`
   position: sticky;
   top: 4px;
   width: 100vw;
-  z-index: 3;
+  z-index: 2;
 `;
 
 const Nav = styled.nav`
@@ -23,14 +23,14 @@ const Nav = styled.nav`
 `;
 
 const Menu = styled.div`
-  ${({ MenuFoiClicado }) => !MenuFoiClicado && `display: none;`}
+  ${({ menuFoiClicado }) => !menuFoiClicado && `display: none;`}
 `;
 
 const Navbar = () => {
-  const [MenuFoiClicado, setMenuFoiClicado] = useState(false);  
+  const [menuFoiClicado, setMenuFoiClicado] = useState(false);  
 
   const updateMenu = () => {
-    setMenuFoiClicado(!MenuFoiClicado);
+    setMenuFoiClicado(!menuFoiClicado);
   };
 
   const closeMenu = () => {
@@ -40,12 +40,12 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Nav >
-        <BurgerMenu onClick={updateMenu} MenuFoiClicado={MenuFoiClicado} />
+        <BurgerMenu onClick={updateMenu} menuFoiClicado={menuFoiClicado} />
         <IconesRedes />
       </Nav>
-      <Menu MenuFoiClicado={MenuFoiClicado}>
-        {MenuFoiClicado &&
-          <ModalOverlay MenuFoiClicado={MenuFoiClicado} > 
+      <Menu menuFoiClicado={menuFoiClicado}>
+        {menuFoiClicado &&
+          <ModalOverlay menuFoiClicado={menuFoiClicado} > 
             <MenuAberto closeMenu={closeMenu}  />
           </ModalOverlay>
         }

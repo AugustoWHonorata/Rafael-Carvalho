@@ -7,6 +7,9 @@ const Li = styled.li`
   font-style: italic ;
   list-style: none;
   border-bottom: 1px solid black;
+  &:nth-child(10){
+    border: none;
+  }
   @media (min-width: 1024px) {
         font-size: 2em;
     }

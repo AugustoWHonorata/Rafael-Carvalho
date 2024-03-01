@@ -16,12 +16,12 @@ const ModalDiv = styled.div`
 function ModalOverlay  (
     {
         children,
-        MenuFoiClicado,
+        menuFoiClicado,
         alturaNavbar 
     }
 ) {
     return (
-        <ModalDiv block={MenuFoiClicado ? "block" : "none"} alturaNavbar={alturaNavbar}>
+        <ModalDiv block={menuFoiClicado ? "block" : "none"} alturaNavbar={alturaNavbar}>
             {children}              
         </ModalDiv>
     )

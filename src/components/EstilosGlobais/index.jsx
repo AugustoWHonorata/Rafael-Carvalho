@@ -26,7 +26,7 @@ html {
 
 
 body {
-  background-image: url("/imagens/Fundos/Fundo(2).jpg");
+  background-image: url("/imagens/Fundos/Fundo(3).jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

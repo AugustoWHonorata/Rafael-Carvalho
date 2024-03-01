@@ -28,7 +28,7 @@ function CuidadosPre() {
             <TituloTipo>Pré Tatto</TituloTipo>
             <DivPadrao>
                 <UlCuidados>
-                    {CuidadosPreTopicos.map((cuidado) => <LiCuidados>{cuidado}</LiCuidados>)}
+                    {CuidadosPreTopicos.map((cuidado, index) => <LiCuidados key={index}>{cuidado}</LiCuidados>)}
                 </UlCuidados>
                 <AvisoAcompanhante>*ACOMPANHANTES*</AvisoAcompanhante>
                 <QuantidadeAcompanhantes>PERMITIDO 1 PESSOA</QuantidadeAcompanhantes>

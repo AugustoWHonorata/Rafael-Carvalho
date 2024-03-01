@@ -13,7 +13,7 @@ function CuidadosPos() {
             <TituloTipo>Pós Tatto</TituloTipo>
             <DivPadrao>
                 <UlCuidados>
-                    {CuidadosPosTopicos.map((cuidado) => <LiCuidados>{cuidado}</LiCuidados>)}
+                    {CuidadosPosTopicos.map((cuidado, index) => <LiCuidados key={index} >{cuidado}</LiCuidados>)}
                 </UlCuidados>
             </DivPadrao>
         </div>

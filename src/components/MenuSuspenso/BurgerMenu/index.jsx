@@ -10,7 +10,6 @@ const BurgerMenuContainer = styled.div`
   height: 5vh;
   margin: auto 0;
   justify-content: space-between;
-  /* width: 3em; */
   @media (min-width: 768px) {
         height: 5vh;
     }

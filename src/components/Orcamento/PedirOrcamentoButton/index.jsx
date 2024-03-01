@@ -6,12 +6,18 @@ const Button = styled.button`
   border-radius: 80px;
   box-shadow: 4px 4px 10px black;
   color: #000;
+  cursor: pointer;
   font-style: italic;
   font-weight: bold;
-  margin-top: 2em;
+  margin: 1.5em 0;
   padding: 1.5vh;
-  cursor: pointer;
+  transition: 1s;
   width: 60%;
+  &:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+  }
   @media (min-width: 768px) {
       padding: 2vh 3vw;
       width: 60%;

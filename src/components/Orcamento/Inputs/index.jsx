@@ -10,6 +10,7 @@ const InputsEstilo = styled.input`
   padding: 1vw;
   padding-left: 4vw;
   width: 100%;
+  transition: 1s;
 
   &::placeholder {
     color: #0000006a;
@@ -19,24 +20,25 @@ const InputsEstilo = styled.input`
   }
 
   &:focus {
-    outline: none; 
-    border: 1px dotted #3626e2; 
+    outline: none;
+    border: 1px dotted #3626e2;
   }
 
   @media (min-width: 1024px) {
-        padding-left: 1vw;
-    }
+    padding-left: 1vw;
+  }
 `;
 
-
-function Inputs({ id, placeholder, type, onBlur }) {
+function Inputs({ id, type, onBlur, placeholder }) {
+  
   return (
-    <InputsEstilo id={id}
+    <InputsEstilo
+      id={id}
       placeholder={placeholder}
       type={type}
-      onBlur={onBlur} />
-
-  )
+      onBlur={onBlur}
+    />
+  );
 }
 
-export default Inputs
+export default Inputs;

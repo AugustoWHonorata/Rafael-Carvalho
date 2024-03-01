@@ -59,7 +59,7 @@ function Orcamento() {
           <LabelInputs htmlFor="InputIdeia">Descreva a sua ideia brevemente:</LabelInputs>
           <Inputs
             id="InputIdeia"
-            placeholder="Envie uma imagem de referência na conversa caso houver."
+            placeholder="Ou envie uma imagem no whatsapp."
             type="text"
             onBlur={(e) => setIdeia(e.target.value)} />
           <LabelInputs htmlFor="InputTamanho">Insira o tamanho aproximado em cm:</LabelInputs>

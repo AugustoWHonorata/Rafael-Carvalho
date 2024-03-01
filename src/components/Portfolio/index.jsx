@@ -4,25 +4,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import imagesData from './cards.json';
 import styled from 'styled-components';
-import ModalOverlay from '../Modal';
+import ModalPortfolio from './ModalPortfolio';
+import ImagemCarousel from './ImagemCarousel';
 
 
 const PortfolioTitulo = styled.h2`
    text-align: center;
  `;
 
-
-const ImgCarousel = styled.img`
-  height: 50vh;
-  border: 1px solid #000;
-  border-radius: 10px;
-  width: 100vw;
-  filter: brightness(100%) saturate(100%) drop-shadow(0 0 5px #220000cb) drop-shadow(0 0 10px #220000cb) drop-shadow(0 0 15px #220000cb);
-  @media (min-width: 768px) {
-      margin: 0 2em;
-      width: auto;
-    }
-`;
 
 
 function Portfolio() {
@@ -39,28 +28,42 @@ function Portfolio() {
   const settings = {
     autoplay: true,
     adaptiveHeight: true,
+    arrows: false,
+    autoplaySpeed: 4000,
+    centerMode: true,
     dots: false,
     infinite: true,
-    arrows: false,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     initialSlide: 0,
+    pauseOnHover: false,
+    speed: 3000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     variableWidth: true,
-    pauseOnHover: true,
+    waitAnimation: true,
+    responsive: [     
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
   };
 
   function armazenaImagemClicada(index) {
     setImagemClicada(imagesData[index])
     alteraAbertoFechado()
   }
+
   return (
     <section id='portfolio'>
       <PortfolioTitulo>PORTFÓLIO</PortfolioTitulo>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <ImgCarousel
+            <ImagemCarousel
               src={image}
               alt={`slide-${index}`}
               onClick={() => armazenaImagemClicada(index)
@@ -69,7 +72,7 @@ function Portfolio() {
           </div>
         ))}
       </Slider>
-      <ModalOverlay modalOpen={modalOpen} alteraAbertoFechado={alteraAbertoFechado} imagemClicada={imagemClicada}
+      <ModalPortfolio modalOpen={modalOpen} alteraAbertoFechado={alteraAbertoFechado} imagemClicada={imagemClicada}
       />
     </section>
   );
