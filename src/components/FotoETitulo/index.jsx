@@ -11,10 +11,7 @@ const ConteinerPrincipal = styled.section`
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    padding-top: 2em;
-    @media (min-width: 768px) {
-        padding: 0;
-    }
+    padding:0;
 `
 
 
