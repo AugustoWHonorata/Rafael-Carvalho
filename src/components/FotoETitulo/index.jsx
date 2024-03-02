@@ -30,7 +30,7 @@ function FotoETitulo() {
 
     return (
         <ConteinerPrincipal>
-            <FotoRafael src="/assets/FotoRafael.jpg" alt="Foto Rafael" />
+            <FotoRafael src="/imagens/FotoRafael.jpg" alt="Foto Rafael" />
             <Titulo>Rafael Carvalho Ink</Titulo>
             <IndicadorDeRolagem handleScroll={handleScroll}/>
         </ConteinerPrincipal>

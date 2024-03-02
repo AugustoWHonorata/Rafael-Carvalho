@@ -17,7 +17,7 @@ const ImgRafa = styled.img`
 
 function FotoQuemSouEu(){
     return(
-        <ImgRafa src="/assets/FotoComTrofeu.jpeg"/>
+        <ImgRafa src="/imagens/FotoComTrofeu.jpeg"/>
     )
 }
 
