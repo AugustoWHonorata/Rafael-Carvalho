@@ -6,12 +6,11 @@ const Indicador = styled.div`
     align-items: center;
     border: 2px solid #000000;
     border-radius: 50%;
-    bottom: 5%;
     display: flex;
     height: 5vh;
     justify-content: center;
-    position: absolute;
-    margin-top: 1em;
+    margin: 1em 0 0 0;
+    padding: 0.5em; 
     transform: translateX(-50%);
     transition: opacity 0.5s ease;
     width: 5vh;

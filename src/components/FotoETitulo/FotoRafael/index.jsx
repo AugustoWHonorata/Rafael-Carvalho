@@ -5,6 +5,7 @@ const Foto = styled.img`
     border-radius: 100%; 
     height: 90vw; 
     width: 90vw; 
+    margin: 0 0 1em 0;
     object-fit: cover; 
        filter: brightness(100%) saturate(100%) drop-shadow(0 0 5px #220000cb) drop-shadow(0 0 10px #220000cb) drop-shadow(0 0 15px #220000cb);
     @media (min-width: 768px) {
