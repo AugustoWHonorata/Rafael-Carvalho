@@ -22,6 +22,8 @@ const EstilosGlobais = createGlobalStyle`
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  margin: 0;
+  padding: 0;
 }
 
 
